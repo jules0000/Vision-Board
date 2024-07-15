@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>VISION BOARD 2024</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="tm-bg-dark">
+    <main class="tm-container masonry">
+        <!-- Inspirational Quote Section -->
+        <div class="item tm-bg-white tm-block tm-block-left" data-desktop-seq-no="1" data-mobile-seq-no="1">
+            <p class="tm-hero-text">&ldquo;Believe in yourself, and all that you are. Know that there is something
+                inside you that is greater than any obstacle.&rdquo;</p>
+            <header class="tm-block-brand">
+                <div class="tm-bg-primary-dark tm-text-white tm-block-brand-inner">
+                    <i class="fas fa-braille fa-3x"></i>
+                    <h1 class="tm-brand-name">Vision Board</h1>
+                    <header>
+                        <h2 class="tm-text-uppercase">
+                            Castro 2024
+                        </h2>
+                    </header>
+
+                </div>
+            </header>
+        </div>
+        <!-- Career Goals Section -->
+        <div class="item" data-desktop-seq-no="2" data-mobile-seq-no="4">
+            <img src="img\career.jpg" alt="Career Goals" class="tm-img-left">
+        </div>
+        <div class="item tm-bg-secondary tm-text-white tm-block tm-block-wider tm-block-pad tm-block-left-2"
+            data-desktop-seq-no="3" data-mobile-seq-no="5">
+            <header>
+                <h2 class="tm-text-uppercase">
+                    Career Goals
+                </h2>
+            </header>
+            <p>Envision yourself in roles like Software Developer, Data Scientist, or Cybersecurity Analyst at top
+                companies like Google, Amazon, and Microsoft. Aim to work in dynamic industries and locations that
+                excite
+                you.</p>
+        </div>
+        <!-- Skill Development Section -->
+        <div class="item" data-desktop-seq-no="4" data-mobile-seq-no="8">
+            <img src="img\skill.png" alt="Skill Development" class="tm-img-left">
+        </div>
+        <div class="item tm-bg-white tm-block tm-block-right" data-desktop-seq-no="5" data-mobile-seq-no="9">
+            <header>
+                <h2 class="tm-text-uppercase">
+                    Skill Development
+                </h2>
+            </header>
+            <p>Master programming languages like Python, Java, and C++. Learn frameworks and tools like React, Node.js,
+                and Docker. Earn certifications to boost your expertise and work on exciting projects to build your
+                portfolio.</p>
+        </div>
+        <!-- Education and Learning Section -->
+        <div class="item" data-desktop-seq-no="6" data-mobile-seq-no="2">
+            <img src="img\learn.jpg" alt="Education and Learning">
+        </div>
+        <div class="item tm-block-right" data-desktop-seq-no="7" data-mobile-seq-no="3">
+            <div class="tm-block-right-inner tm-bg-primary-light tm-text-white tm-block tm-block-wider tm-block-pad">
+                <header>
+                    <h2 class="tm-text-uppercase">
+                        Education and Learning
+                    </h2>
+                </header>
+                <p>Continue learning through online courses, technical books, and attending workshops and conferences.
+                    Stay updated with the latest trends and technologies in computer science.</p>
+            </div>
+        </div>
+        <!-- Personal Development Section -->
+        <div class="item" data-desktop-seq-no="8" data-mobile-seq-no="6">
+            <img src="img\personal.jpg" alt="Personal Development">
+        </div>
+        <div class="item tm-bg-white tm-block tm-form-section" data-desktop-seq-no="9" data-mobile-seq-no="7">
+            <div class="tm-form-container tm-block-pad tm-pb-0">
+                <header>
+                    <h2 class="tm-text-uppercase tm-text-gray-light tm-mb">
+                        Personal Development
+                    </h2>
+                </header>
+                <p>Work on enhancing your soft skills like communication, teamwork, and leadership. Pursue hobbies and
+                    interests that bring you joy and maintain a healthy lifestyle through regular exercise and mindful
+                    practices.</p>
+            </div>
+        </div>
+        <!-- Networking Section -->
+        <div class="item tm-bg-secondary tm-text-white tm-block tm-block-wider tm-block-pad" data-desktop-seq-no="10"
+            data-mobile-seq-no="10">
+            <header>
+                <h2 class="tm-text-uppercase">
+                    Networking
+                </h2>
+            </header>
+            <p>Build connections with mentors, peers, and industry professionals. Use platforms like LinkedIn and GitHub
+                to expand your professional network and stay engaged with the tech community.</p>
+        </div>
+        <!-- Milestones and Achievements Section -->
+        <div class="item" data-desktop-seq-no="11" data-mobile-seq-no="11">
+            <img src="img\success.jpg" alt="Milestones and Achievements">
+        </div>
+        <div class="item tm-bg-white tm-block tm-block-pad tm-block-right" data-desktop-seq-no="12"
+            data-mobile-seq-no="12">
+            <header>
+                <h2 class="tm-text-uppercase">
+                    Milestones and Achievements
+                </h2>
+            </header>
+            <p>Celebrate your achievements, from internships and co-ops to awards, honors, and publications. Track your
+                progress and set new goals as you advance in your career.</p>
+        </div>
+
+
+    </main>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script>
+        let callAdjustLayout;
+        let currentLayout = "desktop",
+            nextLayout = "desktop";
+
+        function detectIE() {
+            var ua = window.navigator.userAgent;
+            var msie = ua.indexOf('MSIE ');
+            if (msie > 0) {
+                return parseInt(ua.substring(msie + 5, ua.indexOf('.', msie)), 10);
+            }
+            var trident = ua.indexOf('Trident/');
+            if (trident > 0) {
+                var rv = ua.indexOf('rv:');
+                return parseInt(ua.substring(rv + 3, ua.indexOf('.', rv)), 10);
+            }
+            var edge = ua.indexOf('Edge/');
+            if (edge > 0) {
+                return parseInt(ua.substring(edge + 5, ua.indexOf('.', edge)), 10);
+            }
+            return false;
+        }
+
+        function adjustLayout() {
+            let block1, block2, block3, block4, block5, block6, block7, block8, block9;
+            if (window.innerWidth <= 1199) {
+                nextLayout = "mobile";
+                block1 = $("div[data-mobile-seq-no='1']");
+                block2 = $("div[data-mobile-seq-no='2']");
+                block3 = $("div[data-mobile-seq-no='3']");
+                block4 = $("div[data-mobile-seq-no='4']");
+                block5 = $("div[data-mobile-seq-no='5']");
+                block6 = $("div[data-mobile-seq-no='6']");
+                block7 = $("div[data-mobile-seq-no='7']");
+                block8 = $("div[data-mobile-seq-no='8']");
+                block9 = $("div[data-mobile-seq-no='9']");
+            } else {
+                nextLayout = "desktop";
+                block1 = $("div[data-desktop-seq-no='1']");
+                block2 = $("div[data-desktop-seq-no='2']");
+                block3 = $("div[data-desktop-seq-no='3']");
+                block4 = $("div[data-desktop-seq-no='4']");
+                block5 = $("div[data-desktop-seq-no='5']");
+                block6 = $("div[data-desktop-seq-no='6']");
+                block7 = $("div[data-desktop-seq-no='7']");
+                block8 = $("div[data-desktop-seq-no='8']");
+                block9 = $("div[data-desktop-seq-no='9']");
+            }
+            if (nextLayout !== currentLayout) {
+                block1.after(block2.detach());
+                block2.after(block3.detach());
+                block3.after(block4.detach());
+                block4.after(block5.detach());
+                block5.after(block6.detach());
+                block6.after(block7.detach());
+                block7.after(block8.detach());
+                block8.after(block9.detach());
+                currentLayout = nextLayout;
+            }
+        }
+
+        window.onresize = function () {
+            clearTimeout(callAdjustLayout);
+            callAdjustLayout = setTimeout(adjustLayout, 100);
+        }
+
+        $(function () {
+            if (detectIE()) {
+                alert('Please use the latest version of Chrome or Firefox for best browsing experience.');
+            }
+            adjustLayout();
+        })
+    </script>
+</body>
+
+</html>
